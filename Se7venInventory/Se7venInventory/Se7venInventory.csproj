@@ -185,7 +185,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
-    <Content Include="InventoryMantenimientos\Bodegas.aspx" />
+    <Content Include="InventoryMantenimientos\Parametros.aspx" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\bullet.png" />
     <Content Include="Images\contrato_small.jpg" />
@@ -260,6 +260,7 @@
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\General.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\AuthConfig.cs" />
     <Compile Include="About.aspx.cs">
@@ -318,17 +319,20 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DSSe7venInventory.cs">
+      <DependentUpon>DSSe7venInventory.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DSSe7venInventory.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DSSe7venInventory.xsd</DependentUpon>
     </Compile>
-    <Compile Include="InventoryMantenimientos\Bodegas.aspx.cs">
-      <DependentUpon>Bodegas.aspx</DependentUpon>
+    <Compile Include="InventoryMantenimientos\Parametros.aspx.cs">
+      <DependentUpon>Parametros.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="InventoryMantenimientos\Bodegas.aspx.designer.cs">
-      <DependentUpon>Bodegas.aspx</DependentUpon>
+    <Compile Include="InventoryMantenimientos\Parametros.aspx.designer.cs">
+      <DependentUpon>Parametros.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
